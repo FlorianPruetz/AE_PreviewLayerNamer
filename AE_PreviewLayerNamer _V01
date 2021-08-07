@@ -1,0 +1,10 @@
+let output = "No Active Comp";
+let startLayer = thisLayer.index + 1;
+let layersTotal= thisComp.numLayers -1 ;
+
+for (var i = startLayer ; i <= layersTotal; i = i + 1) {
+	if (thisComp.layer(i).active == true){
+		output = thisComp.layer(i).name;
+	}else output
+	
+	}
