@@ -2,6 +2,8 @@
 // Textlayer will display the names of the following layers in the Layer stack
 // Good for preview comps
 // Script expects layer not to time-overlap
+// See AE Screenshot for reference 
+// https://github.com/FlorianPruetz/AE_PreviewLayerNamer
 
 
 let output = "No Active Comp";   //Output if empty
