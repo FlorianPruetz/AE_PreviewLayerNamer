@@ -1,6 +1,12 @@
-let output = "No Active Comp";
-let startLayer = thisLayer.index + 1;
-let layersTotal= thisComp.numLayers -1 ;
+// Copy this on a textlayer in the Source Text
+// Textlayer will display the names of the following layers in the Layer stack
+// Good for preview comps
+// Script expects layer not to time-overlap
+
+
+let output = "No Active Comp";   //Output if empty
+let startLayer = thisLayer.index + 1;   //Names everything under this layer
+let layersTotal= thisComp.numLayers -1 ;   // Names everything exect the LAST layer, maybe BG Images?
 
 for (var i = startLayer ; i <= layersTotal; i = i + 1) {
 	if (thisComp.layer(i).active == true){
